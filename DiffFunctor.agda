@@ -112,7 +112,7 @@ Things that need to be done:
  - Solve partial differential equations. (good luck)
  - Explore inverse functions. (hard)
  - Write some examples, such as
-       0 => Diff (Const a)  (requires a linear type system)
+       0 => Diff (Const a)
        1 => Diff Id
        n * Id^(n-1) => Diff Id^n
        List ** List => Diff List
