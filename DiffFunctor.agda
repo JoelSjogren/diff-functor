@@ -75,7 +75,7 @@ map (f ∘∘ g) u = map f (map g u)
 -- Differentiation is parametric consumption of a resource!
 -- You are supposed to use dx : h precisely once, like in linear logic.
 Diff : Fun -> Fun
-fun (Diff f) x = {h : Num} -> h -> fun f (x + h)
+fun (Diff f) x = {h : Num} -> (dx : h) -> fun f (x + h)
 map (Diff f) u f[x+·] dx = map f (map[+] u (\dx -> dx)) (f[x+·] dx)
 
 -- A differentiation rule is a natural transformation! (in reverse)
